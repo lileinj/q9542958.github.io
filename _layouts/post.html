@@ -1,15 +1,58 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+	{% include head.html %}
+	<div class="page-type-timeline">
+		
+		<li class="item">
+						<div class="meta">
+							<i class="fa fa-users"></i>
+							<p class="date">
+								2014-07-29
+							</p>
+							<i class="arrow-left"></i>
+						</div>
+						<div class="content">
+							<header>
+								<div class="links">
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+								</div>
+								<h3>Cyeachina后台CMS系统</h3>
+								<p class="tags">
+									<span class="tag">CMS</span><span class="tag">PHP</span><span class="tag">Codeigniter</span><span class="tag">Bootstrap</span>
+								</p>
+							</header>
 
-</div>
+							<figure>
+								<img src="http://mbed.qiniudn.com/yanjunyi.com/img/works/cyeachina-cms-list.jpg" style="max-width:50%;" />
+								<img src="http://mbed.qiniudn.com/yanjunyi.com/img/works/cyeachina-cms-occupation.jpg" style="max-width:50%;" />
+							</figure>
+
+							<article>
+								<p>
+									客户网站CMS系统定制开发。PHP后端使用Codeigniter框架，页面表现层使用Bootstrap。
+								</p>
+
+							</article>
+						</div>
+					</li>
+		
+		
+		
+		
+			{{ content }}
+		
+		<!--<header class="post-header">
+		<h1>{{ page.title }}</h1>
+		<p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+		</header>
+
+		<article class="post-content">
+		{{ content }}
+		</article>-->
+
+	</div>
+
+	
+
+</html>

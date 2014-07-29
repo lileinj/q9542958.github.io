@@ -4,18 +4,96 @@ layout: default
 
 <div class="home">
 
-  <h1>方菲胖的奇思妙想！ </h1>
-  <h3><p class="rss-subscribe">查看胖胖本尊？ <a href="/pic.html">快点这里 !</a></p><h3>
-  </br>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-  <p><img src="test.gif"></img></p>
-  <p class="rss-subscribe">Hi , It's a game here ! <a href="/game.html">Open It !</a></p>
+	</br>
+	<div class="main">
+		<div id="timeline">
+			<p class="line-end" data-translate="recently">
+				最近
+			</p>
+			<ul class="item-list">
+				<!--<li class="item">
+				<div class="meta">
+				<i class="fa fa-users"></i>
+				<p class="date">
+				2014-07-29
+				</p>
+				<i class="arrow-left"></i>
+				</div>
+				<div class="content">
+				<header>
+				<div class="links">
+
+				</div>
+				<h3>Cyeachina后台CMS系统</h3>
+				<p class="tags">
+				<span class="tag">CMS</span><span class="tag">PHP</span><span class="tag">Codeigniter</span><span class="tag">Bootstrap</span>
+				</p>
+				</header>
+
+				<figure>
+				<img src="http://mbed.qiniudn.com/yanjunyi.com/img/works/cyeachina-cms-list.jpg" style="max-width:50%;" />
+				<img src="http://mbed.qiniudn.com/yanjunyi.com/img/works/cyeachina-cms-occupation.jpg" style="max-width:50%;" />
+				</figure>
+
+				<article>
+				<p>
+				客户网站CMS系统定制开发。PHP后端使用Codeigniter框架，页面表现层使用Bootstrap。
+				</p>
+
+				</article>
+				</div>
+				</li>-->
+				{% for post in site.posts %}
+
+				<li class="item">
+					<div class="meta">
+						<i class="fa fa-users"></i>
+						<p class="date">
+							{{ post.date | date: "%Y-%m-%d" }}
+						</p>
+						<i class="arrow-left"></i>
+					</div>
+					<div class="content">
+						<header>
+							<div class="links">
+
+							</div>
+							<h3>
+							<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+								{{ post.title }}
+							</a></h3>
+							<!--<p class="tags">
+							<span class="tag">CMS</span><span class="tag">PHP</span><span class="tag">Codeigniter</span><span class="tag">Bootstrap</span>
+							</p>-->
+						</header>
+
+						<figure>
+							<img src="{{ post.img1 }}" style="max-width:50%;" />
+							<img src="{{ post.img2 }}" style="max-width:50%;" />
+						</figure>
+
+						<article>
+							<p>
+								{{ post.descript }}
+							</p>
+
+						</article>
+					</div>
+				</li>
+
+				{% endfor %}
+
+			</ul>
+			<p class="line-end">
+				...
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
+	<script type="text/javascript" src="/assets/js/site.js"></script>
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa37d06f71b8f8aec3a1d627f5a8d7a72' type='text/javascript'%3E%3C/script%3E"));
+	</script>
 
 </div>

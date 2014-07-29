@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="mytharcher" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>欢迎来到dou-b.com</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/blog.css" />
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+			}
+			html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, form, dl, dt, dd, figure {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			html, body {
+				height: 100%;
+			}
+			body {
+				line-height: 1.6em;
+				font-family: Helvetica, Arial, sans-serif;
+				color: #555;
+				background: url(pictures/background.jpg) fixed;
+			}
+			a {
+				margin: 0 2px;
+				color: #06c;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+				margin: 0;
+			}
+			img {
+				border: 0;
+				vertical-align: middle;
+			}
+			input, textarea {
+				resize: none;
+			}
+
+			@font-face {
+				font-family: 'fa-addition';
+				src: url('http://mbed.qiniudn.com/font/fa-addition.eot?81684682');
+				src: url('http://mbed.qiniudn.com/font/fa-addition.eot?81684682#iefix') format('embedded-opentype'), url('http://mbed.qiniudn.com/font/fa-addition.woff?81684682') format('woff'), url('http://mbed.qiniudn.com/font/fa-addition.ttf?81684682') format('truetype'), url('http://mbed.qiniudn.com/font/fa-addition.svg?81684682#fa-addition') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+			/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+			/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+			/*
+			 @media screen and (-webkit-min-device-pixel-ratio:0) {
+			 @font-face {
+			 font-family: 'fa-addition';
+			 src: url('http://mbed.qiniudn.com/font/fa-addition.svg?81684682#fa-addition') format('svg');
+			 }
+			 }
+			 */
+
+			[class^="icon-"]:before, [class*=" icon-"]:before {
+				font-family: "fa-addition";
+				font-style: normal;
+				font-weight: normal;
+				speak: none;
+				display: inline-block;
+				text-decoration: inherit;
+				width: 1em;
+				margin-right: .2em;
+				text-align: center;
+				/* opacity: .8; */
+
+				/* For safety - reset parent styles, that can break glyph codes*/
+				font-variant: normal;
+				text-transform: none;
+				/* fix buttons height, for twitter bootstrap */
+				line-height: 1em;
+				/* Animation center compensation - margins should be symmetric */
+				/* remove if not needed */
+				margin-left: .2em;
+				/* you can be more comfortable with increased icons size */
+				/* font-size: 120%; */
+
+				/* Uncomment for 3D effect */
+				/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+			}
+
+		</style>
+	</head>
+
+	<body class="page-type-timeline">
+
+		<!--
+		<aside>
+		<h1><a href="/"><img src="" width="32" height="32" /></a><span data-translate="work-for-free">工作，是为了自由1111</span></h1>
+
+		<div id="skills" class="block">
+		<h3 data-translate="programming-skills">编程技能</h3>
+		<ul>
+		<li>
+		<div class="progress"><div class="bar" style="width:90%">JavaScript</div></div>
+		</li>
+		<li>
+		<div class="progress"><div class="bar" style="width:85%">HTML5</div></div>
+		</li>
+		<li>
+		<div class="progress"><div class="bar" style="width:80%">CSS3</div></div>
+		</li>
+		<li>
+		<div class="progress"><div class="bar" style="width:65%">Node.js</div></div>
+		</li>
+		<li>
+		<div class="progress"><div class="bar" style="width:60%">PHP</div></div>
+		</li>
+		</ul>
+		</div>
+
+		<div id="tools" class="block">
+		<h3 data-translate="using-tools">使用工具</h3>
+		<ul>
+		<li><i class="fa fa-apple"></i><span>Mac</span></li>
+		<li><i>S</i><span>Sublime Text</span></li>
+		<li><i class="fa fa-git"></i><span>Git</span></li>
+		<li><i class="icon-chrome"></i><span>Chrome</span></li>
+		<li><i class="icon-firefox"></i><span>Firefox</span></li>
+		<li><i class="fa fa-google"></i><span>Google</span></li>
+		<li><i class="fa fa-github"></i><span>GitHub</span></li>
+		<li><i class="fa fa-bitbucket"></i><span>BitBucket</span></li>
+		<li><i class="fa fa-trello"></i><span>Trello</span></li>
+		<li><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></li>
+		</ul>
+		</div>
+
+		<div id="contact" class="block">
+		<p><span data-translate="contact-me-description">个人长期承接各类Web开发，如果您能提供的时薪不低于$15，请联系我的邮箱：</span> <a href="mailto:" class="mail"></a></p>
+		</div>
+		</aside>-->
+
+		<div class="main">
+			<div id="timeline">
+				<p class="line-end" data-translate="recently">
+					最近
+				</p>
+				<ul class="item-list">
+					<li class="item">
+						<div class="meta">
+							<i class="fa fa-users"></i>
+							<p class="date">
+								2014-07-29
+							</p>
+							<i class="arrow-left"></i>
+						</div>
+						<div class="content">
+							<header>
+								<div class="links">
+
+								</div>
+								<h3>Cyeachina后台CMS系统</h3>
+								<p class="tags">
+									<span class="tag">CMS</span><span class="tag">PHP</span><span class="tag">Codeigniter</span><span class="tag">Bootstrap</span>
+								</p>
+							</header>
+
+							<figure>
+								<img src="http://mbed.qiniudn.com/yanjunyi.com/img/works/cyeachina-cms-list.jpg" style="max-width:50%;" />
+								<img src="http://mbed.qiniudn.com/yanjunyi.com/img/works/cyeachina-cms-occupation.jpg" style="max-width:50%;" />
+							</figure>
+
+							<article>
+								<p>
+									客户网站CMS系统定制开发。PHP后端使用Codeigniter框架，页面表现层使用Bootstrap。
+								</p>
+
+							</article>
+						</div>
+					</li>
+				</ul>
+				<p class="line-end">
+					...
+				</p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
+		<script type="text/javascript" src="/assets/js/site.js"></script>
+		<script type="text/javascript">
+			var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa37d06f71b8f8aec3a1d627f5a8d7a72' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+	</body>
+</html>
