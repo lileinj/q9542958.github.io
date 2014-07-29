@@ -4,7 +4,7 @@ title:  "FIFA有多黑，你知道吗？"
 date:   2014-07-14 14:51:30
 categories: jekyll update
 descript:  "别以为体育记者只会问“你对这场比赛怎么看”，“你有什么话要对祖国人民说”。好的体育记者一样会探索真相，揭露黑幕。"
-img1:  ""
+img1:  "/pictures/posts/FIFA/show.jpg"
 img2:  ""
 ---
 
