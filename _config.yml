@@ -1,0 +1,11 @@
+# Site settings
+title: 请不要联系我们
+webName: 欢迎光临dou－b.com！
+email: 511_Njupt@super.vip.qq.com
+description: "这仅仅是开了一个玩笑"
+baseurl: ""
+url: "http://dou－b.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
